@@ -3,7 +3,6 @@
 /**
  * Module dependencies.
  */
-
 var app = require('../app');
 var debug = require('debug')('pxer-homepage-2:server');
 var http = require('http');
@@ -25,6 +24,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
+console.log(`Listing ${port}`);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);

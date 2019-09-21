@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+var acceptLanguageMiddleware = require('accept-language-middleware');
+var i18n = require('./i18n/middleware');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var libRouter = require('./routes/lib');
 
 var app = express();
 
@@ -25,9 +28,12 @@ app.use(sassMiddleware({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(acceptLanguageMiddleware({ supported: ['en', 'zh'], default: 'en'}));
+app.use(i18n({defaultLang: 'en'}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/lib', libRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
