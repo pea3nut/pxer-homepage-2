@@ -13,5 +13,5 @@ before_install:
 script:
   - npm test
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t pea3nut/pxer-homepage2:latest .
-  - docker push pea3nut/pxer-homepage2:latest
+  - docker build -t pea3nut/pxer-homepage-2:latest .
+  - docker push pea3nut/pxer-homepage-2:latest
