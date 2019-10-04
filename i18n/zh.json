@@ -6,8 +6,7 @@
     "getHelp": "获取帮助",
     "fileBug": "报告问题（Bug）",
     "requestFeature": "申请新功能",
-    "openTicket": "其他帮助",
-    "joinQQQun": "加入QQ群"
+    "openTicket": "其他帮助"
   },
   "phrase": {
     "getWorksEasy": "快速抓取画师的 <strong>所有</strong> 作品 / 收藏",
@@ -34,7 +33,7 @@
     "installPxerSuccess": "成功！点击“安装”按钮即可",
     "installPxerFailOpenSource": "失败，浏览器打开了源码。可能是因为你没有成功安装 Tampermonkey",
     "installPxerFailDownloadFile": "失败，浏览器下载了文件。可能是因为你没有成功安装 Tampermonkey",
-    "installPxerByTampermonkey": "安装 Pxer",
+    "installPxerByTampermonkey": "通过 Tampermonkey 安装 Pxer",
     "goToExtensionStore": "前往浏览器扩展商店",
     "letUsTryIt": "Pxer 已经安装完成，现在就<a href=\"https://www.pixiv.net/search.php?s_mode=s_tag&word=%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%200user\" target=\"_blank\">去试试</a>吧！",
     "pxerWillAppear": "当你进入 <strong>部分 Pixiv 页面</strong> 时，Pxer 界面会出现在页面顶部",
