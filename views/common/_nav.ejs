@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark pxer-nav">
+    <div class="container">
+        <a class="navbar-brand" href="/">Pxer <em class="pxer-nav-beta">β</em></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/"><%= t('nav.home') %></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/install"><%= t('nav.install') %></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <%= t('nav.getHelp') %>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://github.com/FoXZilla/Pxer/issues/new?template=bug---bug-report.md" target="_blank"><%= t('nav.fileBug') %></a>
+                        <a class="dropdown-item" href="https://github.com/FoXZilla/Pxer/issues/new?template=-----feature-request.md" target="_blank"><%= t('nav.requestFeature') %></a>
+                        <a class="dropdown-item" href="https://github.com/FoXZilla/Pxer/issues/new?template=-----discussion.md" target="_blank"><%= t('nav.openTicket') %></a>
+                    </div>
+                </li>
+                <% if (lang === 'zh') { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://jq.qq.com/?_wv=1027&k=46nvvs6" target="_blank"><%= t('nav.joinQQQun') %></a>
+                    </li>
+                <% } %>
+                <li class="nav-item dropdown">
+                    <a class="nav-link national-flag-link" href="#" id="nationalFlagDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="/images/national-flag/circle/CH@2x.png" alt="china" style="z-index: 600" />
+                        <img src="/images/national-flag/circle/UK@2x.png" alt="english" style="z-index: 500" />
+                    </a>
+                    <div class="dropdown-menu national-flag-menu" aria-labelledby="nationalFlagDropdownMenuLink">
+                        <a class="dropdown-item" href="#lang=zh"><img src="/images/national-flag/rec/CH@2x.png" />简体中文</a>
+                        <a class="dropdown-item" href="#lang=en"><img src="/images/national-flag/rec/UK@2x.png" />English</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

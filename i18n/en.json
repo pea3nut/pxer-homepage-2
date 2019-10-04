@@ -1,3 +1,60 @@
 {
-  "hello": "Yallo"
+  "title": "Pxer - Maybe the best in all of tools for Pixiv.net",
+  "nav": {
+    "home": "Home",
+    "install": "Install",
+    "getHelp": "Get Help",
+    "fileBug": "Report Bug",
+    "requestFeature": "Request Feature",
+    "openTicket": "Open Ticket",
+    "joinQQQun": ""
+  },
+  "phrase": {
+    "getWorksEasy": "Get <strong>all works or collections</strong> for one person quickly",
+    "filterIsVarious": "Get the search result and <strong>afiltered by</strong> tag, score etc...",
+    "maintainAlways": "Maintain <strong>4 years</strong>, release 20+ versions",
+    "supportAllOs": "Support Windows, Mac and Linux system",
+    "downloadIsNeedless": "Running in your browser, download is needless",
+    "maybeTheBest": "Maybe the best in all of tools for Pixiv.net",
+    "designForPixiv": "A tool for Pixiv.net. Open source, free and easy to use"
+  },
+  "button": {
+    "startNow": "Start Now",
+    "installTampermonkey": "Install Tampermonkey",
+    "installPxer": "Install Pxer",
+    "viewSourceCode": "Source Code"
+  },
+  "steps": {
+    "detectBrowser": "Detect your browser type is",
+    "afterInstallTampermonkey": "After Tampermonkey installed, you should see a new button on the browser navigate bar, like the image below. Go next if you have sew it.",
+    "clickToInstallPxer": "Make sure you have installed Tampermonkey, then click the button below for install Pxer",
+    "installTampermonkey": "Install the browser extension Tampermonkey",
+    "installPxer": "Install Pxer",
+    "installPxerResultCase": "There is the result for install below",
+    "installPxerSuccess": "Success! Click the \"install\" button for install",
+    "installPxerFailOpenSource": "Fail, the browser open the source of Pxer. Maybe you haven't installed Tampermonkey correctly",
+    "installPxerFailDownloadFile": "Fail, the browser downloaded a file. Maybe you haven't installed Tampermonkey correctly",
+    "installPxerByTampermonkey": "Install Pxer by Tampermonkey",
+    "goToExtensionStore": "Go to the extension store of browser",
+    "letUsTryIt": "Pxer install successful! Let's <a href=\"https://www.pixiv.net/search.php?s_mode=s_tag&word=%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%200user\" target=\"_blank\">try is now</a> !",
+    "pxerWillAppear": "When you enter some pages in Pixiv, the pxer will appeared on top of page",
+    "exercise": "All Done!"
+  },
+  "browser": {
+    "firefox": "Firefox",
+    "chrome": "Chrome",
+    "edge": "Edge",
+    "qq": "QQ Browser",
+    "360se": "360 SE",
+    "360ee": "360 Chrome",
+    "maxthon": "Maxthon",
+    "sougou": "Sougou Browser",
+    "2345": "2345 Browser"
+  },
+  "taskLine": {
+    "installTampermonkey": "Install Browser Extension",
+    "installPxer": "Install Pxer",
+    "exercise": "Done"
+  },
+  "hello": "Yahello"
 }

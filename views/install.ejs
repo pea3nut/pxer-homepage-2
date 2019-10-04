@@ -1,0 +1,140 @@
+<%- include common/_head.ejs %>
+    <script src="/lib/moveto/moveTo.min.js"></script>
+    <script src="/javascripts/install.js"></script>
+</head>
+<body class="pxer-body install">
+    <%- include common/_nav.ejs %>
+    <div class="container pxer-container">
+        <div class="row install-steps-container">
+            <nav class="col-12 col-lg-3 col-md-4 step-nav">
+                <div class="fixed-container">
+                    <div class="step active" scroll-spy="#install-tampermonkey">
+                        <a
+                            class="step-node-container"
+                            <%= step === 'install-pxer' ? 'ssr' : '' %>
+                            push-state
+                            push-state-focus="#install-tampermonkey"
+                            href="/install/install-Tampermonkey"
+                        >
+                            <div class="step-description"><%= t('taskLine.installTampermonkey') %></div>
+                            <div class="step-node">1</div>
+                        </a>
+                    </div>
+                    <div class="step" scroll-spy="#install-pxer">
+                        <div class="step-line"></div>
+                        <a
+                            class="step-node-container"
+                            <%= step === 'install-pxer' ? 'ssr' : '' %>
+                            push-state
+                            push-state-focus="#install-pxer"
+                            href="/install/install-pxer"
+                        >
+                            <div class="step-description"><%= t('taskLine.installPxer') %></div>
+                            <div class="step-node">2</div>
+                        </a>
+                    </div>
+                    <div class="step" scroll-spy="#done">
+                        <div class="step-line"></div>
+                        <a
+                            class="step-node-container"
+                            <%= step === 'exercise' ? 'ssr' : '' %>
+                            push-state
+                            push-state-focus="#done"
+                            href="/install/exercise"
+                        >
+                            <div class="step-description"><%= t('taskLine.exercise') %></div>
+                            <div class="step-node">3</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-lg-9 col-md-8 step-cards">
+                <div class="step-card">
+
+                    <<%= step === 'install-tampermonkey' ? 'h1' : 'h2' %>
+                        id="install-tampermonkey"
+                        class="step-title"
+                    ><%= t('steps.installTampermonkey') %></<%= step === 'install-tampermonkey' ? 'h1' : 'h2' %>>
+                    <div class="step-content">
+                        <p class="form-inline browser-test-result">
+                            <label class="control-label"><%= t('steps.detectBrowser') %></label>
+                            <select id="browserType" class="form-control form-control-sm">
+                                <option value="firefox"><%= t('browser.firefox') %></option>
+                                <option value="chrome"><%= t('browser.chrome') %></option>
+                                <option value="edge"><%= t('browser.edge') %></option>
+                                <option value="qq"><%= t('browser.qq') %></option>
+                                <option value="360se"><%= t('browser.360se') %></option>
+                                <option value="360ee"><%= t('browser.360ee') %></option>
+                                <option value="maxthon"><%= t('browser.maxthon') %></option>
+                                <option value="sougou"><%= t('browser.sougou') %></option>
+                                <option value="2345"><%= t('browser.2345') %></option>
+                            </select>
+                        </p>
+                        <div class="d-flex">
+                            <a id="extensionStore" href="###" target="_blank" class="button-big">
+                                <div class="button-text">
+                                    <span class="big-text"><%= t('button.installTampermonkey') %></span>
+                                    <span class="small-text"><%= t('steps.goToExtensionStore') %></span>
+                                </div>
+                                <div class="button-icon">
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <p><%= t('steps.afterInstallTampermonkey') %></p>
+                        <img src="/images/zoom-4-tampermonkey.webp" />
+
+                    </div>
+                </div>
+                <div class="step-card">
+                    <<%= step === 'install-pxer' ? 'h1' : 'h2' %>
+                        id="install-pxer"
+                        class="step-title"
+                    ><%= t('steps.installPxer') %></<%= step === 'install-pxer' ? 'h1' : 'h2' %>>
+                    <div class="step-content">
+                        <div class="install-pxer">
+                            <p><%= t('steps.clickToInstallPxer') %></p>
+                            <div class="d-flex">
+                                <a class="button-big" href="https://pxer-app.pea3nut.org/pxer-master.user.js" target="_blank">
+                                    <div class="button-text">
+                                        <span class="big-text"><%= t('button.installPxer') %></span>
+                                        <span class="small-text"><%= t('steps.installPxerByTampermonkey') %></span>
+                                    </div>
+                                    <div class="button-icon">
+                                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <p><%= t('steps.installPxerResultCase') %></p>
+                            <div class="img-description success">
+                                <img src="/images/install-pxer-success.webp" alt="success" />
+                                <p>（<%= t('steps.installPxerSuccess') %>）</p>
+                            </div>
+                            <div class="img-description fail">
+                                <img src="/images/install-pxer-fail-1.webp" alt="success" />
+                                <p>（<%= t('steps.installPxerFailOpenSource') %>）</p>
+                            </div>
+                            <div class="img-description fail">
+                                <img src="/images/install-pxer-fail-2.webp" alt="success" />
+                                <p>（<%= t('steps.installPxerFailDownloadFile') %>）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <<%= step === 'exercise' ? 'h1' : 'h2' %>
+                        id="done"
+                        class="step-title"
+                    ><%= t('steps.exercise') %></<%= step === 'exercise' ? 'h1' : 'h2' %>>
+                    <div class="step-content">
+                        <p><%- t('steps.letUsTryIt') %></p>
+                        <p><%- t('steps.pxerWillAppear') %></p>
+                        <img src="/images/pxer-ui-show.webp" alt="pxer ui" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include common/_foot.ejs %>
+</body>
+</html>

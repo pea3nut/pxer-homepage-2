@@ -88,3 +88,9 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+// For --test
+if (process.argv.includes('--test')) {
+  console.log('Waiting 10s for exit');
+  setTimeout(() => process.exit(0), 10000);
+}

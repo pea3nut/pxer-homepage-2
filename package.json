@@ -3,23 +3,28 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "node ./bin/www --test",
     "start": "node ./bin/www"
   },
   "dependencies": {
     "accept-language-middleware": "^1.1.0",
     "bootstrap": "^4.3.1",
+    "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "font-awesome": "^4.7.0",
     "fs-extra": "^8.1.0",
     "http-errors": "~1.6.3",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "morgan": "~1.9.1",
+    "moveto": "^1.8.2",
     "node-sass-middleware": "0.11.0"
   },
   "devDependencies": {
+    "@types/moveto": "^1.8.0",
     "@types/fs-extra": "^8.0.0"
   }
 }

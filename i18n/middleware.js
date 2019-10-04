@@ -9,13 +9,14 @@ const I18nMap = {
 
 module.exports = function ({ defaultLang }) {
     return function (req, res, next) {
+        const lang = req.cookies.lang || req.language;
+
         res.locals = {
-            lang: req.language,
+            lang,
             locale: req.locale,
             t(key) {
-                console.log(I18nMap[req.language], key);
                 return (
-                    _.get(I18nMap[req.language], key)
+                    _.get(I18nMap[lang], key)
                     || _.get(I18nMap[defaultLang], key)
                     || key
                 );

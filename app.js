@@ -8,7 +8,7 @@ var acceptLanguageMiddleware = require('accept-language-middleware');
 var i18n = require('./i18n/middleware');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var installRouter = require('./routes/install');
 var libRouter = require('./routes/lib');
 
 var app = express();
@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  indentedSyntax: true, // true = .sass and false = .scss
+  indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -32,7 +32,7 @@ app.use(acceptLanguageMiddleware({ supported: ['en', 'zh'], default: 'en'}));
 app.use(i18n({defaultLang: 'en'}));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/install', installRouter);
 app.use('/lib', libRouter);
 
 // catch 404 and forward to error handler

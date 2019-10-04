@@ -1,0 +1,227 @@
+body {
+  position: relative; }
+
+.pxer-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 900; }
+  .pxer-nav-beta {
+    color: #0074aa; }
+  .pxer-nav .national-flag-menu img {
+    height: 0.8em;
+    margin: 0.2em; }
+  .pxer-nav .national-flag-link img {
+    height: 1em;
+    margin-right: -0.6em;
+    position: relative;
+    top: -2px; }
+
+.pxer-body {
+  background: #e4e7ee; }
+  .pxer-body .pxer-container {
+    padding-top: 30px;
+    margin-top: 56px;
+    min-height: 100vh;
+    background: #fff;
+    position: relative; }
+
+.pxer-foot {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 0.7em;
+  background-color: #fff;
+  font-size: 12px; }
+  .pxer-foot p {
+    margin: 0; }
+
+.index .pxer-container {
+  padding-top: 0; }
+
+.index .pxer-jumbotron {
+  background: #e9ecef;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  clear: both;
+  margin-bottom: 0;
+  box-sizing: content-box; }
+  .index .pxer-jumbotron .container {
+    box-sizing: border-box;
+    margin-top: -30px; }
+    .index .pxer-jumbotron .container .pi-big-logo {
+      display: flex;
+      align-items: center; }
+      .index .pxer-jumbotron .container .pi-big-logo img {
+        max-height: 100%;
+        width: 100%; }
+    .index .pxer-jumbotron .container .pi-header {
+      margin-bottom: 1em; }
+    .index .pxer-jumbotron .container .pi-body > * {
+      margin-bottom: 0.5em; }
+    .index .pxer-jumbotron .container hr {
+      margin-top: 50px;
+      margin-bottom: 40px; }
+    .index .pxer-jumbotron .container .pi-buttons {
+      text-align: center; }
+      .index .pxer-jumbotron .container .pi-buttons .btn {
+        margin: 0 50px; }
+  @media (max-width: 768px) {
+    .index .pxer-jumbotron {
+      align-items: flex-start;
+      padding-top: 40px;
+      font-size: 14px; }
+      .index .pxer-jumbotron .container .pi-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em; }
+        .index .pxer-jumbotron .container .pi-header h1 {
+          font-size: 3.5rem;
+          font-weight: 300;
+          line-height: 1.2; }
+        .index .pxer-jumbotron .container .pi-header .pih-logo {
+          height: 3.5rem;
+          width: 3.5rem;
+          display: flex;
+          align-items: center; }
+          .index .pxer-jumbotron .container .pi-header .pih-logo img {
+            width: 95%;
+            margin-top: -18%; }
+      .index .pxer-jumbotron .container .pi-body > * {
+        margin-bottom: 1em; }
+      .index .pxer-jumbotron .container .pi-body h2 {
+        font-size: 1.5rem; }
+      .index .pxer-jumbotron .container .pi-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem; }
+        .index .pxer-jumbotron .container .pi-buttons .btn {
+          margin: 0; } }
+
+.install .pxer-container {
+  margin-top: 86px;
+  margin-bottom: 300px; }
+
+.install .step-nav {
+  display: flex;
+  margin-top: 100px;
+  height: 300px;
+  justify-content: flex-end;
+  position: relative;
+  right: 10px; }
+  @media (max-width: 768px) {
+    .install .step-nav {
+      display: none; } }
+  .install .step-nav .fixed-container {
+    position: fixed; }
+    .install .step-nav .fixed-container a {
+      text-decoration: none !important; }
+      .install .step-nav .fixed-container a:hover {
+        text-decoration: none !important; }
+    .install .step-nav .fixed-container .step {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .install .step-nav .fixed-container .step.active .step-node, .install .step-nav .fixed-container .step.active .step-line {
+        background: #fdb913; }
+      .install .step-nav .fixed-container .step .step-line {
+        height: 130px;
+        width: 2px;
+        background: gray;
+        margin: -1em 11.5px;
+        z-index: 100; }
+      .install .step-nav .fixed-container .step .step-node-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; }
+      .install .step-nav .fixed-container .step .step-node {
+        height: 25px;
+        width: 25px;
+        line-height: 24px;
+        text-align: center;
+        background-color: #bebebe;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        z-index: 200; }
+      .install .step-nav .fixed-container .step .step-description {
+        width: 500px;
+        text-align: right;
+        margin-right: 7px; }
+
+.install .step-cards .step-card {
+  border: 1px dashed #8b8c8d;
+  min-height: 50vh;
+  margin-bottom: 100px;
+  padding: 10px 15px 2em; }
+  .install .step-cards .step-card:first-child {
+    margin-top: 20px; }
+  .install .step-cards .step-card .step-title {
+    margin-bottom: 28px; }
+  .install .step-cards .step-card .step-content .button-big {
+    margin-bottom: 1rem; }
+  .install .step-cards .step-card .step-content img {
+    max-width: 90%; }
+  .install .step-cards .step-card .step-content .img-description {
+    margin-bottom: 1.5em; }
+  .install .step-cards .step-card .step-content .browser-test-result label {
+    margin-right: 0.5em; }
+
+.img-description {
+  color: #6a6a6a;
+  font-size: 10px;
+  text-align: center;
+  width: 90%; }
+  .img-description img {
+    margin-bottom: 0.3em;
+    width: 100% !important;
+    max-width: 100% !important; }
+  .img-description p {
+    margin-bottom: 0.2em; }
+  .img-description.success {
+    border: 5px solid #00a900; }
+  .img-description.fail {
+    border: 5px solid #a90000; }
+
+.button-big {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: stretch;
+  background: linear-gradient(to bottom, #beddc1 2%, #beddc1 2%, #8ec493 3%, #1f6d26 91%, #1f6d26 91%, #1f6d26 98%, #1f6d26 98%, #114015 98%); }
+  .button-big:hover {
+    color: #fff;
+    text-decoration: inherit; }
+  .button-big:active {
+    background: -moz-linear-gradient(top, #87b28c 2%, #26702c 2%, #5d9963 98%, #385c3b 98%, #385c3b 98%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #87b28c 2%, #26702c 2%, #5d9963 98%, #385c3b 98%, #385c3b 98%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #87b28c 2%, #26702c 2%, #5d9963 98%, #385c3b 98%, #385c3b 98%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .button-big .button-text {
+    margin: 0.3em 1em 0.8em 1em;
+    display: flex;
+    flex-direction: column; }
+  .button-big .button-icon {
+    width: 68px;
+    text-align: center;
+    font-size: 25px;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .button-big .big-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.25em; }
+  .button-big .small-text {
+    color: #d9d9d9;
+    font-size: 0.75em; }
+
+/*# sourceMappingURL=style.css.map */
