@@ -3,10 +3,36 @@
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta renderer="webkit" />
+    <meta name="author" content="<%= t('seo.author') %>" />
+    <meta name="keywords" content="<%= t('seo.keywords') %>" />
+    <meta name="description" content="<%= t('seo.description') %>" />
+    <meta name="baidu-site-verification" content="C1uHLl5Qgr" />
+    <meta name="google-site-verification" content="G8e0SvBpa0M-iqCguDUhSESMTxeNO4YYA6NbYR0bHhg" />
+    <meta name="360-site-verification" content="91e1173c19ce5931ca8143dc23c40768" />
     <title><%= t('title') %></title>
     <link rel='stylesheet' href='/lib/bootstrap/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/lib/font-awesome/css/font-awesome.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?853de546107b52bdfb4811935685c28c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147724348-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147724348-3');
+    </script>
     <script src='/lib/jquery/jquery.slim.min.js'></script>
     <script src='/lib/bootstrap/js/bootstrap.min.js'></script>
     <script src='/javascripts/cookies.js'></script>

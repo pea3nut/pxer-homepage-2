@@ -55,5 +55,10 @@
     "installPxer": "Install Pxer",
     "exercise": "Done"
   },
+  "seo": {
+    "author": "pea3nut",
+    "keywords": "pixiv,capture,batch,tool,tools,extension,plugin,plug-in,script,pxer,pea3nut,free,github,open-source",
+    "description": "Pxer is a tool for pixiv, it can get picture of pixiv very quickly. It's free and open source"
+  },
   "hello": "Yahello"
 }

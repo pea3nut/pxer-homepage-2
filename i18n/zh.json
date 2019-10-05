@@ -55,5 +55,10 @@
     "installPxer": "安装 Pxer",
     "exercise": "完成"
   },
+  "seo": {
+    "author": "花生PeA",
+    "keywords": "P站,pixiv,批量,抓图,收图,扒图,插件,脚本,pxer,像素猎手,pea3nut,花生PeA,免费,开源,github,工具",
+    "description": "Pxer是一个专为Pixiv打造的工具，一个爬虫，可以方便快捷的批量抓取Pixiv中的图片。开源、免费、易于使用"
+  },
   "hello": "你好"
 }
