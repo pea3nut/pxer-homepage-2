@@ -36,7 +36,7 @@
     "installPxerByTampermonkey": "Install Pxer by Tampermonkey",
     "goToExtensionStore": "Go to the extension store of browser",
     "letUsTryIt": "Pxer install successful! Let's <a href=\"https://www.pixiv.net/search.php?s_mode=s_tag&word=%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%200user\" target=\"_blank\">try is now</a> !",
-    "pxerWillAppear": "When you enter some pages in Pixiv, the pxer will appeared on top of page",
+    "pxerWillAppear": "You will see the Pxer panel in pages of pixiv.net.<br />Note that you saw button in Pxer only when the page is supported.",
     "exercise": "All Done!"
   },
   "browser": {
