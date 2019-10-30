@@ -1,0 +1,17 @@
+<%- include common/_head.ejs %>
+</head>
+<body class="pxer-body doc">
+    <%- include common/_nav.ejs %>
+    <div class="container pxer-container">
+        <%- docContent %>
+    </div>
+    <% include common/_foot.ejs %>
+    <script>
+        Array.from(document.getElementsByTagName('table')).forEach(table => {
+            if (!table.classList.contains('table')) {
+                table.classList.add('table', 'table-bordered');
+            }
+        });
+    </script>
+</body>
+</html>

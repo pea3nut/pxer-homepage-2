@@ -10,6 +10,7 @@ var i18n = require('./i18n/middleware');
 var indexRouter = require('./routes/index');
 var installRouter = require('./routes/install');
 var libRouter = require('./routes/lib');
+var docRouter = require('./routes/doc');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use(i18n({defaultLang: 'en'}));
 app.use('/', indexRouter);
 app.use('/install', installRouter);
 app.use('/lib', libRouter);
+app.use('/doc', docRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

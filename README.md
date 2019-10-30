@@ -4,7 +4,7 @@ To run:
 
 ```bash
 npm install
-node ./bin/www
+npm run dev
 # open 127.0.0.1:3000 in your browser
 ```
 

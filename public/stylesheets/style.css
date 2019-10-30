@@ -170,6 +170,11 @@ body {
   .install .step-cards .step-card .step-content .browser-test-result label {
     margin-right: 0.5em; }
 
+.doc .pxer-container {
+  margin-top: 86px;
+  margin-bottom: 100px;
+  padding-bottom: 100px; }
+
 .img-description {
   color: #6a6a6a;
   font-size: 10px;

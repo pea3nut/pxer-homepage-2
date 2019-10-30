@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "test": "node ./bin/www --test",
+    "dev": "cross-env DEBUG=pxer-homepage-2:* node ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -11,6 +12,7 @@
     "bootstrap": "^4.3.1",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
+    "cross-env": "^6.0.3",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
@@ -19,6 +21,7 @@
     "http-errors": "~1.6.3",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
+    "marked": "^0.7.0",
     "morgan": "~1.9.1",
     "moveto": "^1.8.2",
     "node-sass-middleware": "0.11.0"
