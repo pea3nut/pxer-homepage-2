@@ -1,0 +1,65 @@
+{
+  "title": "Pxer 公式サイト - Pixiv.net の全てのツールで一番使いやすいバッチキャプチャーソフトかもしれない",
+  "nav": {
+    "home": "ホームページ",
+    "install": "インストール",
+    "getHelp": "ヘルプ",
+    "donation": "応援する！",
+    "fileBug": "ご意見（バグ）",
+    "requestFeature": "新機能に関するご提案・ご要望",
+    "openTicket": "その他の問題"
+  },
+  "phrase": {
+    "getWorksEasy": "アーティストの <strong>全て</strong> 作品をすばやくつかむ / お気に入り",
+    "filterIsVarious": "検索結果をクロールしてラベル、評価などによって<strong>フィルタリング</strong>",
+    "maintainAlways": "<strong>4年間</strong>保守，20以上のバージョン・続くイテレーション",
+    "supportAllOs": "Windows / Mac / Linux システムをサポート",
+    "downloadIsNeedless": "ダウンロードは不要、ブラウザで直接実行",
+    "maybeTheBest": "Pixiv.net の全てのツールで一番使いやすいバッチキャプチャーソフトかもしれない",
+    "designForPixiv": "Pixiv.net に向くクローラー。オープンソース、無料、使いやすい"
+  },
+  "button": {
+    "startNow": "今すぐ開始",
+    "installTampermonkey": "Tampermonkey をインストール",
+    "installPxer": "Pxer をインストール",
+    "viewSourceCode": "Github ソースコード"
+  },
+  "steps": {
+    "detectBrowser": "ブラウザの種類を検出：",
+    "afterInstallTampermonkey": "インストールが完了した後、以下のように、Tampermonkey アイコンがブラウザに表示されます。既に表示されている場合は、次に進めてください。",
+    "clickToInstallPxer": "Tampermonkey がインストールされたことを確認し、下のボタンをクリックして Pxer をインストールしてください。",
+    "installTampermonkey": "ブラウザの拡張機能 Tampermonkey をインストール",
+    "installPxer": "Pxer をインストール",
+    "installPxerResultCase": "以下のように、いくつかの可能なインストール結果",
+    "installPxerSuccess": "成功！「インストール」ボタンをクリックしてください。",
+    "installPxerFailOpenSource": "失敗しました。ブラウザにソースを開きました。Tampermonkey を正しくインストールしなかったの原因と思われます。",
+    "installPxerFailDownloadFile": "失敗しました。ブラウザはファイルをダウンロードしました。Tampermonkey を正しくインストールしなかったの原因と思われます。",
+    "installPxerByTampermonkey": "Tampermonkey で Pxer をインストール",
+    "goToExtensionStore": "ブラウザの拡張ストアへ",
+    "letUsTryIt": "Pxer のインストールが完了しました。今すぐ<a href=\"https://www.pixiv.net/search.php?s_mode=s_tag&word=%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%200user\" target=\"_blank\">お試してください</a>！",
+    "pxerWillAppear": "Pixiv.net のページに、Pxer パネルが表示されます。<br />Pxer にボタンが表示されているのは、クロールがページにサポートされている場合のみです。",
+    "exercise": "インストール完了！"
+  },
+  "browser": {
+    "firefox": "Firefox",
+    "chrome": "Chrome",
+    "edge": "Edge",
+    "qq": "QQ ブラウザ",
+    "360se": "360 SE",
+    "360ee": "360 Chrome",
+    "maxthon": "Maxthon",
+    "sougou": "Sougou ブラウザ",
+    "2345": "2345 ブラウザ"
+  },
+  "taskLine": {
+    "installTampermonkey": "ブラウザの拡張機能をインストール",
+    "installPxer": "Pxer をインストール",
+    "exercise": "完了"
+  },
+  "seo": {
+    "author": "花生PeA",
+    "keywords": "Pixiv.net、pixiv、バッチ、キャプチャ、ピックアップ、拡張機能、プラグイン、スクリプト、Pxer、プクセルハンター、pea3nut、ピーナッツPeA、無料、オープンソース、github、ツール",
+    "description": "Pxer は、Pixiv で画像を素早く簡単にバッチキャプチャーできるクローラー、Pixiv 向けの専用ツールです。オープンソース、無料、使いやすい。"
+  },
+  "hello": "ようこそ"
+}
