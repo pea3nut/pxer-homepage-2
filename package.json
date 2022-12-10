@@ -15,7 +15,7 @@
     "cross-env": "^6.0.3",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "font-awesome": "^4.7.0",
     "fs-extra": "^8.1.0",
     "http-errors": "~1.6.3",
